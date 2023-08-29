@@ -1,0 +1,303 @@
+ManagerScreen:
+    Screen1:
+    Screen2:
+    Screen3:
+    
+
+<Screen1>:         
+    name:'first'
+    BoxLayout:
+        canvas:
+            
+            
+                
+                 
+            Rectangle:
+                source : 'sigma.png' 
+                size: self.size 
+                pos: self.pos 
+        orientation:'vertical'
+        Label:
+            markup: True
+            text:'[b]Loup garou[/b]'
+            color:1,.5,.45,1
+
+            font_size:60
+            
+        #Image:
+            #source:'bb.png'
+            #padding: ('50dp', '10dp', '10dp', '10dp')
+        Label:
+            #text: 'welcome to my world'
+            font_size:30
+            color:1,0,0,1
+        BoxLayout:
+            orientation:"vertical"
+            Label:
+                text:''
+            Button:
+                size_hint: .85,.60
+                pos_hint: {'center_x':0.5 , 'center_y':0.5 }
+                color: 1 , 0 , 0 , 1
+                markup: True
+                
+     
+                 
+                text:'[b]Start[/b]'
+                font_size: 40
+                on_release: 
+                    app.root.current="second"
+                    root.manager.transition.direction ='up'    
+            Label:
+                text:'MB MOULOUD'
+                font_size:8
+                              
+
+<Screen2>:
+    
+    name:'second'
+    
+    ScrollView:
+        
+        
+        
+    
+        GridLayout:
+            id: grid_layout
+            cols: 4
+            rows:5
+            #size_hint: None, None
+            #width: self.minimum_width
+            #height: self.minimum_height
+            padding: dp(5)
+            spacing: dp(5)
+
+            Button:
+                text: '\n\n\nSelvateur'
+                background_normal: 'selvateur.jpg'
+                
+                color: 1 , 0.2 , 0.5 , 1  
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+                
+                
+            Button:
+                text: '   Simple \n\n villageois'
+                background_normal: 'villa.jpg'
+                color: 1 , 0.2 , 0.5 , 1
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '    Loup \n\n principal'
+                background_normal: 'll.jpg'
+                color: 1 , 0.2 , 0.5 , 1   
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\n\nLoup_noir'
+                background_normal: 'loup_noir.jpg'
+                color: 1 , 0.2 , 0.5 , 1  
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\n\nSorcière\n'
+                background_normal: 'sorci.jpg'
+                color: 1 , 0.2 , 0.5 , 1   
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\n\nVoyante'
+                background_normal: 'voyante.jpg'
+                color: 1 , 0.2 , 0.5 , 1   
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\n\nCorbeau'
+                color: 1 , 0.2 , 0.5 , 1  
+                background_normal: 'corbeau.jpg'
+
+                 
+                font_size : '16sp'  
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\nvampire'
+                color: 1 , 0.2 , 0.5 , 1     
+                background_normal : 'vampire.jpg'  
+                font_size : '20sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\n\nLoup_bleu'
+                background_normal: 'bleu.jpg'
+                color: 1 , 0.2 , 0.5 , 1  
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\nPrince'
+                background_normal: 'prince.jpg'
+                color: 1 , 0.2 , 0.5 , 1   
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '   Enfant \n sauvage'
+                background_normal: 'enfant.jpg'
+                color: 1 , 0.2 , 0.5 , 1  
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\nSoleil'
+                background_normal: 'Sun.png'
+                color: 1 , 0.2 , 0.5 , 1   
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+                   
+            Button:
+                text: "\n\n\nL'ancien"
+                background_normal: 'lancien.jpg'
+                color: 1 , 0.2 , 0.5 , 1   
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+
+            Button:
+                text: '\n\n\nChasseur'
+                background_normal: 'Chasseur.jpg'
+                color: 1 , 0.2 , 0.5 , 1   
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\n\nLoup_blanc'
+                background_normal: 'loup_blanc.jpg'
+                color: 1 , 0.2 , 0.5 , 1  
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\nJuge'
+                color: 1 , 0.2 , 0.5 , 1  
+                background_normal: 'juge.jpg'
+                
+                font_size : '19sp'
+                on_release: root.button_pressed(self)
+                
+
+            Button:
+                
+                text: '\n\n\n\nVoleur'
+                background_normal: 'Voleur.jpg'
+                color: 1 , 0.2 , 0.5 , 1  
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+            Button:
+                text: '\n\n\nDoubleur'
+                background_normal: 'doubleur.png'
+                color: 1 , 0.2 , 0.5 , 1   
+                font_size : '16sp'
+                on_release: root.button_pressed(self)
+                    
+            
+            Button:
+                text: '\n\nLourse'
+                background_normal: 'lourse.jpg'
+                color: 1 , 0.2 , 0.5 , 1   
+                font_size : '20sp'
+                on_release: root.button_pressed(self)
+                
+
+            
+            BoxLayout:
+                orientation:'vertical'
+                
+                Button:
+                    text: 'Captain'
+                    background_normal: ''
+                    color: 1 , 0.2 , 0.5 , 1   
+                    font_size: '20sp'
+                    on_release: root.button_pressed(self)
+                
+                Button:
+                    markup: True
+                    text:"[b]next[/b]"
+                    font_size:25
+                    background_normal: 'next.jpg'
+                    background_color: 0.4, 0.7, 0, 1 
+                    color:1,0,0,1
+                    
+                    on_release:
+                        app.root.current='third'
+                        root.manager.transition.direction ='down'
+
+                
+                
+                    
+
+<Screen3>:
+    name: 'third'
+    BoxLayout:
+        
+        orientation: 'vertical'
+        padding: 5
+        spacing: 5
+        Label:
+            markup: True
+            id: role_label
+            text: '[b][i] [/i][/b]'
+            color:.8,.5,.3,1
+            font_size:50
+        Label:
+            id: qaid_label
+            text: ''
+            color: .2, .7, .5, 1
+            font_size: 24
+            opacity: 0  # Start with the qaid label hidden 
+        GridLayout:
+            
+            spacing:1
+            padding:3
+            cols:2
+            Button:
+                markup: True
+                text: "[b]Draw Role[/b]"
+                background_color: 0.8, 0.2, 0.2, 1
+                font_size:20
+                size_hint: .9, .2
+                pos_hint: {'center_x':0.5 , 'center_y':0.5 }
+                on_release: root.draw_role()
+            Button:
+                markup: True
+                text: "[b]Reset Roles[/b]"
+                background_color: 0.8, 0.2, 0.2, 1
+                font_size:20
+                size_hint: .9, .2
+                pos_hint: {'center_x':0.5 , 'center_y':0.5 }
+                on_release: root.reset_roles()
+            Button:
+                markup: True
+                
+                text: "[b]Delete Drawn Role[/b]"
+                background_color: 0.8, 0.2, 0.2, 1
+                font_size:20
+                size_hint: .9, .2
+                pos_hint: {'center_x':0.5 , 'center_y':0.5 }
+                on_release: root.delete_drawn_role()
+            Button:
+                markup: True
+                text: "[b]Go Back[/b]"
+                background_color: 0.8, 0.2, 0.2, 1
+                font_size:20
+                size_hint: .9, .2
+                pos_hint: {'center_x':0.5 , 'center_y':0.5 }
+                on_release:
+                    app.root.current = 'second'
+                    root.manager.transition.direction = 'up'
+        BoxLayout:    
+            orientation:'vertical'
+            BoxLayout:
+                orientation:'vertical'    
+                Button:
+                    markup: True
+                    text: "[b]Exit[/b]"
+                    background_color: 0.8, 0.4, 0.4, 1
+                    font_size: 25
+                    size_hint: .3, .015
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+                    on_release: app.stop()
+            
+            
